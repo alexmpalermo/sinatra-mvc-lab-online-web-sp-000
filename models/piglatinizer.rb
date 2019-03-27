@@ -13,7 +13,7 @@ class PigLatinizer
       if word_array[0].match(/AEIOUaeiou/)
         word_array << ["way"]
       else
-        word_array.each_with_index 
+        word_array.each_with_index do |letter, index|
       new = word_array.rotate(???)
       new << ["ay"]
      
