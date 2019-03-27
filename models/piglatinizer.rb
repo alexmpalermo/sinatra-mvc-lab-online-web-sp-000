@@ -11,6 +11,9 @@ class PigLatinizer
     array.map do |word|
       word_array = word.split("")
       
+      
+      
+      
     end 
      end 
      
