@@ -7,7 +7,9 @@ class PigLatinizer
   end
   
   def pig_latin
-    @user_input.split(" ")
+    array = @user_input.split(" ")
+    array.map do |word|
+      word.split("")
   end
   
 end 
