@@ -14,8 +14,10 @@ class PigLatinizer
         word_array << ["way"]
       else
         word_array.each_with_index do |letter, index|
-      new = word_array.rotate(???)
-      new << ["ay"]
+          
+          find when letter is a vowel then take that index 
+         new = word_array.rotate(index)
+         new << ["ay"]
      
      
      
