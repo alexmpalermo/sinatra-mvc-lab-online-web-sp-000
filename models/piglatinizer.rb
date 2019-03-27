@@ -15,7 +15,7 @@ class PigLatinizer
       elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match(/AEIOUaeiou/)
       new = word_array.rotate
       new << ["ay"]
-      elsif word_array[0]
+      elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match
       
       .rotate
       word_array << ["a","y"]
