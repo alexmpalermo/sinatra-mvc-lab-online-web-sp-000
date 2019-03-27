@@ -20,7 +20,7 @@ class PigLatinizer
             vowels << index
           end 
         end
-         new = word_array.rotate(vowels[0])
+         new = word_array.rotate(vowels[0].to_i)
          new << ["ay"]
          new.join
        end
