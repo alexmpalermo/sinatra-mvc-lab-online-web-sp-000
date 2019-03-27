@@ -9,10 +9,12 @@ class PigLatinizer
   def piglatinize(user_input)
     array = user_input.split(" ")
     array.map do |word|
+      word_array = word.split("")
+      if word_array[0].match(/AEIOUaeiou/)
+        word_array << ["way"]
+      elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match()
       
-      if word[0]
-      
-      word_array = word.split("").rotate
+      .rotate
       word_array << ["a","y"]
       new_word = word_array.join
     
