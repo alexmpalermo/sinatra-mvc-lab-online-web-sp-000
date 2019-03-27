@@ -26,12 +26,8 @@ class PigLatinizer
          new << ["ay"]
          new.join
        end
-       end 
-       
-      
-      
+       end
       final_array.join(" ")
-    
      end 
      
     end 
