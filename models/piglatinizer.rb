@@ -12,12 +12,13 @@ class PigLatinizer
       word_array = word.split
       if word_array[0].match(/AEIOUaeiou/)
         word_array << ["way"]
-      elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match(/AEIOUaeiou/)
-      new = word_array.rotate
+      else
+        word_array.each_with_index
+      new = word_array.rotate(???)
       new << ["ay"]
-      elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match(/bcdfghjklmnpqrstvwxyz/)
-      new = word_array.rotate(2)
-      .rotate
+     
+     
+     
       word_array << ["a","y"]
       new_word = word_array.join
     
