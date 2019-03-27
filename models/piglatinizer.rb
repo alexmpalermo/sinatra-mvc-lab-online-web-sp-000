@@ -11,7 +11,7 @@ class PigLatinizer
     array.each do |word|
       word_array = word.split("").rotate
       word_array << ["a","y"]
-      word_array.join
+      new_word = word_array.join
     
   end 
   end
