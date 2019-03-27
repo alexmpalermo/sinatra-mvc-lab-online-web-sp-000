@@ -6,7 +6,7 @@ class PigLatinizer
     @user_input = user_input
   end
   
-  def pig_latin
+  def piglatinize(user_input)
     array = @user_input.split(" ")
     array.map do |word|
       word_array = word.split("").rotate
