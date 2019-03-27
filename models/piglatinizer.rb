@@ -6,6 +6,9 @@ class PigLatinizer
     @user_input = user_input
   end
   
+  def turn_into_array(input)
+    input.match()
+  
   def piglatinize(user_input)
     array = user_input.split(" ")
     array.map do |word|
@@ -15,7 +18,7 @@ class PigLatinizer
       elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match(/AEIOUaeiou/)
       new = word_array.rotate
       new << ["ay"]
-      elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match
+      elsif word_array[0].match(/bcdfghjklmnpqrstvwxyz/) && word_array[1].match(/bcdfghjklmnpqrstvwxyz/)
       
       .rotate
       word_array << ["a","y"]
