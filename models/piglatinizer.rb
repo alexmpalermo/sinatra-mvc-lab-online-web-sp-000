@@ -13,7 +13,7 @@ class PigLatinizer
       
        if word_array[0].match(/[AEIOUaeiou]/)
         word_array << ["way"]
-        word_array.join
+        word_array.join.to_s
 
       else
         vowels = []
@@ -24,7 +24,7 @@ class PigLatinizer
         end
          new = word_array.rotate(vowels[0].to_i)
          new << ["ay"]
-         new.join
+         new.join.to_s
        end
        end 
        
