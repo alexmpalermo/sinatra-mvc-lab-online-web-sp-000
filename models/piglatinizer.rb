@@ -9,7 +9,7 @@ class PigLatinizer
   def find_out(input)
     if input.match(/bcdfghjklmnpqrstvwxyz/)
       input = c 
-    elsif 
+    elsif input
   
   def piglatinize(user_input)
     array = user_input.split(" ")
