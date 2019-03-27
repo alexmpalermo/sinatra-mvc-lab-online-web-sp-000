@@ -27,7 +27,7 @@ class PigLatinizer
          new.join
        end
        end 
-       array.join(" ")
+       
      end 
      
     end 
