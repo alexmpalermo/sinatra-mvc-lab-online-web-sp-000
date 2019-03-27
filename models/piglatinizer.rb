@@ -12,19 +12,20 @@ class PigLatinizer
       word_array = word.split
       if word_array[0].match(/AEIOUaeiou/)
         word_array << ["way"]
+        word_array.join
       else
+        vowels = []
         word_array.each_with_index do |letter, index|
-          if letter.match
-          find when letter is a vowel then take that index 
-         new = word_array.rotate(index)
+          if letter.match(/aeiou/)
+            vowels << letter
+          end 
+         new = word_array.rotate(index[vowel[0]])
+       end 
          new << ["ay"]
+         new.join
+       end
+       end 
+       array 
+     end 
      
-     
-     
-      word_array << ["a","y"]
-      new_word = word_array.join
-    
-  end 
-  end
-  
-end 
+    end 
