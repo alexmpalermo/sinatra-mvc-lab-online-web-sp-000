@@ -19,7 +19,7 @@ class PigLatinizer
           if letter.match(/aeiou/)
             vowels << letter
           end 
-         new = word_array.rotate(index[vowel[0]])
+         new = word_array.rotate(index[vowels[0]])
        end 
          new << ["ay"]
          new.join
