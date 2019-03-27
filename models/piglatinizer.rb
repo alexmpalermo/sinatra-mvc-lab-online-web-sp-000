@@ -11,14 +11,14 @@ class PigLatinizer
     array.map do |word|
       word_array = word.split("")
       
-       if word_array[0].match(/AEIOUaeiou/)
+       if word_array[0].match(/[AEIOUaeiou]/)
         word_array << ["way"]
         word_array.join
 
       else
         vowels = []
         word_array.each_with_index do |letter, index|
-          if letter.match(/aeiou/)
+          if letter.match(/[aeiou]/)
             vowels << index
           end 
         end
