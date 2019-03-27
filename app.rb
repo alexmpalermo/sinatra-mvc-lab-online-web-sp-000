@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
   
   post '/' do
-    erb :
+    erb :piglatin
   end
   
 end
