@@ -7,7 +7,7 @@ class PigLatinizer
   end
   
   def pig_latin
-    @user_input.
+    @user_input.split(" ")
   end
   
 end 
