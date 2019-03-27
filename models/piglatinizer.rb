@@ -17,15 +17,5 @@ class PigLatinizer
     
   end 
   end
-  consonant = word.scan(/\A[bcdfghjklmnpqrstvwxyz]*/i)
-      if consonant.first != ""
-        suffix = "ay"
-      else
-        suffix = "way"
-      end
-      word.gsub("#{consonant.first}", "") + "#{consonant.first}" + suffix
-    end
-
-     translated_phrase = translated_words.join(" ")
-    translated_phrase
+  
 end 
