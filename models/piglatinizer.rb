@@ -7,9 +7,10 @@ class PigLatinizer
   end
   
   def piglatinize(user_input)
+    word_array = []
     array = user_input.split(" ")
     array.map do |word|
-      word_array = word.split
+      word_array << word.split
       
       if word_array[0].match(/AEIOUaeiou/)
         word_array << ["way"]
